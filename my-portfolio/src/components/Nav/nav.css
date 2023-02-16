@@ -1,0 +1,36 @@
+nav{
+    width: max-content;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(1rem);
+    padding: 0.7rem 1.7rem;
+
+    z-index: 2;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 2.45rem;
+    border-radius: 2rem;
+}
+
+nav a{
+    font-size: 1.4rem;
+    display: flex;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+nav a.active{
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+
+
+@media screen and (max-width:600px) {
+    nav{
+        gap: .5rem;
+    }
+}

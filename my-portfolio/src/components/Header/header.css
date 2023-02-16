@@ -1,0 +1,101 @@
+#home{
+    padding-top: 2rem;
+}
+
+header{
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+
+
+.header__container{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.CTA{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.header__socials{
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 0.8rem;
+    transition: var(--transition);
+}
+
+.header__socials a:hover{
+    transform: translateY(-5px);
+}
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-pry);
+}
+
+.me{
+    margin-top: 2rem;
+    width: 20rem;
+    height: 23rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    border-radius: 12rem 12rem 0 0 ;
+    background-image: url(../../Assets/img-grace.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.scroll__down{
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+/************ media queries***********/
+
+@media screen and (max-width:1024px) {
+header{
+    height: 80%;
+}
+    
+}
+
+@media screen and (max-width:600px) {
+    .header__socials, .scroll__down{
+        display: none;
+    }
+
+    .header__container{
+        height: 68vh;
+    }
+
+}
+
+@media screen and (max-width:380px){
+    .header__container{
+        height: 86vh;
+    }
+}
+
+@media screen and (min-height:1024px){
+    .header__container{
+        height: 50vh;
+    }
+}
+
+
