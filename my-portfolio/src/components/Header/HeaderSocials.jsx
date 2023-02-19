@@ -6,9 +6,9 @@ import {AiOutlineTwitter} from 'react-icons/ai'
 export const HeaderSocials = () => {
   return (
     <div className='header__socials'>
-        <a href="https://linkedin.com" ><AiOutlineLinkedin/></a>
-        <a href="https://github.com" ><BsGithub/></a>
-        <a href="https://twitter.com"><AiOutlineTwitter/></a>
+        <a href="https://linkedin.com" target='_blank' rel='noopener noreferrer'><AiOutlineLinkedin/></a>
+        <a href="https://github.com" target='_blank' rel='noopener noreferrer'><BsGithub/></a>
+        <a href="https://twitter.com"target='_blank' rel='noopener noreferrer'><AiOutlineTwitter/></a>
     </div>
   )
 }

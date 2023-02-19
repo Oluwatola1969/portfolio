@@ -45,12 +45,20 @@ body{
 .container{
     width: var(--container-lg);
     margin: 0 auto;
+    max-width: 1920px;
 }
 
 
 section{
+    width: 100%;
     margin-top: 4rem;
     padding-top: 2rem;
+    transition: var(--transition);
+}
+
+section:nth-child(odd){
+    background: var(--color-bg-variant);
+    padding-bottom: 6rem;
 }
 
 section > h2{
@@ -125,6 +133,12 @@ img{
     section{
         margin-top: 6rem;
     }
+
+    h1{
+        font-size: 2rem;
+    }
+
+
 }
 
 /*********** small screen Media query***********/
@@ -141,7 +155,32 @@ img{
     section{
         margin-top: 2rem;
     }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    
+    h2{
+        font-size: 1.8rem;
+    }
+
+    
+    h3{
+        font-size: 1.4rem;
+    }
+
+    
+    h4{
+        font-size: 1rem;
+    }
+
+    .btn{
+        padding: 0.6rem 1.5rem;
+    }
 }
+
+
 
 
 @media screen and (max-width:280px) {

@@ -5,6 +5,9 @@
 header{
     /* background-color: red; */
     overflow: hidden;
+    /* margin-top: 5rem ; */
+    transition: var(--transition);
+    position: relative;
 }
 
 
@@ -50,7 +53,7 @@ header{
     height: 23rem;
     position: absolute;
     left: calc(50% - 10rem);
-    border-radius: 12rem 12rem 0 0 ;
+    border-radius: 12rem 12rem 4rem 4rem ;
     background-image: url(../../Assets/img-grace.jpg);
     background-position: center;
     background-size: cover;
@@ -61,9 +64,20 @@ header{
     position: absolute;
     right: 0;
     bottom: 5rem;
-    transform: rotate(90deg);
     font-size: 0.9rem;
     letter-spacing: 2px;
+    transform: rotate(90deg);
+    animation: scroll .5s infinite alternate; 
+}
+
+@keyframes scroll {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+    
 }
 
 /************ media queries***********/

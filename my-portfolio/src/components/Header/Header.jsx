@@ -1,5 +1,4 @@
 import React from 'react'
-// import me from "../../Assets/Tolamide2.png"
 import { HeaderSocials } from './HeaderSocials'
 import './header.css'
 
@@ -12,7 +11,7 @@ export const Header = () => {
         <h5 className='text-light'>A Frontend Developer</h5>
 
         <div className="CTA">
-          <a href="/" className="btn" download>Download CV</a>
+          <a href="#portfolio" className="btn">My works</a>
           <a href="#contact" className="btn btn-primary">Let's talk</a>
         </div>
         <HeaderSocials/>

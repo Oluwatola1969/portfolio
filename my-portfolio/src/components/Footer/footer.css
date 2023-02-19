@@ -76,9 +76,6 @@ footer img {
 /********Media Queries*********/
 
 @media screen and (max-width:600px) {
-    footer{
-        margin-top: 5rem;
-    }
 
     .footer__links{
         flex-direction: column;

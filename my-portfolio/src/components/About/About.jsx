@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutMe from '../../Assets/img-timnik.jpg'
 import './about.css'
+import cv from '../../Assets/Oluwatola_Senbadejo_CV.pdf'
 import {FaAward}from 'react-icons/fa'
 import {FiUsers}from 'react-icons/fi'
 import {VscFolderLibrary}from 'react-icons/vsc'
@@ -34,9 +35,9 @@ export const About = () => {
             </div>
           </div>
               <p className="about__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis quis dicta assumenda a. Sunt eaque itaque dignissimos iure cumque maxime et tempora molestias debitis!
+                Hi, My name is Oluwatola Senbadejo from Lagos, Nigeria. I am a frontend web developer
               </p>
-              <a href="#contact" className="btn">Let's Talk</a>
+              <a href={cv} className="btn about__btn" download>Download CV</a>
         </div>
       </div>
     </section>

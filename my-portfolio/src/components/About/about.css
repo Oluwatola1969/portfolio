@@ -7,14 +7,12 @@
     place-items: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    /* background-color: blue; */
 }
 
 #about{
     place-content: center;
     margin: 0;
     padding-top: 3rem;
-    /* background-color: black; */
 }
 
 .about__img{
@@ -33,7 +31,6 @@
     transition: var(--transition);
 }
 
-
 .about__img img:hover{
     transform: rotate(0);
 }
@@ -43,7 +40,6 @@
     flex-direction: column;
     gap: 2rem;
 }
-
 
 .about__cards{
     display:grid;
@@ -55,7 +51,7 @@
 
 .about__card{
     border-radius: 1rem;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-light);
     background: var(--color-bg-variant);
     padding: 1.5rem;
     transition: var(--transition);
@@ -64,6 +60,7 @@
 .about__card:hover{
     border: 1px solid var(--color-light);
     background-color: transparent;
+    transform: translateY(-.5rem);
 }
 
 .about__card h5{
@@ -76,18 +73,19 @@
     margin-bottom: .5rem;
 }
 
+a .about__btn {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Media queries(median screen) */
-
-
-
 
 @media screen and (max-width:1024px) {
    #about{
         height: 100%;
-        width: var(--container-md);
         margin: 0 auto;
-        /* background: rgb(81, 255, 0); */
     }
 
     .about__container{
@@ -108,10 +106,12 @@
 
 @media screen and (max-width:600px) {
    #about{
-        width: var(--container-sm);
         margin: 0 auto;
         margin-bottom: 4rem;
-        
+    }
+
+    .about__img{
+        display: none;
     }
 
 }
