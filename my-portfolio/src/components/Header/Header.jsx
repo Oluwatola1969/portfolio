@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeaderSocials } from './HeaderSocials'
 import './header.css'
+import {RxDoubleArrowDown} from 'react-icons/rx'
 
 export const Header = () => {
   return (
@@ -19,7 +20,7 @@ export const Header = () => {
         <div className="me">
         </div>
 
-        <a href="#contact" className='scroll__down'>scroll down</a>
+        <a href="#contact" className='scroll__down'><RxDoubleArrowDown/></a>
       </div>
     </header>
   )

@@ -77,6 +77,28 @@ input:hover, textarea:hover{
     border-color: var(--color-pry);
 }
 
+
+.scroll__up{
+    position: block;
+    right: 0;
+    bottom: 0;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+    animation: scroll .5s infinite alternate; 
+}
+
+@keyframes scroll {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+    
+}
+
+
 /**************Media Queries**********/
 
 @media screen and (max-width:1024px) {

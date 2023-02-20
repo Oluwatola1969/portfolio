@@ -5,6 +5,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import  { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import {RxDoubleArrowUp} from 'react-icons/rx'
 
 export const Contact = () => {
 const form = useRef();
@@ -28,13 +29,13 @@ const sendEmail = (e) => {
             <MdOutlineEmail className='contact__icon'/>
             <h4>Email</h4>
             <h5>Tolamide29@gmail.com</h5>
-            <a href="mailto:tolamide29@gmail.com" target='_blank'  className='contact__btn'>Send a message</a>
+            <a href="mailto:tolamide29@gmail.com" target='_blank' rel='noreferrer noopener' className='contact__btn'>Send a message</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__icon'/>
             <h4>WhatsApp</h4>
             <h5>+2349136423491</h5>
-            <a href="https://api.whastapp.com/send?phone=+23491364234" target='_blank' className='contact__btn'>Send a message</a>
+            <a href="https://api.whastapp.com/send?phone=+23491364234" target='_blank' rel='noreferrer noopener' className='contact__btn'>Send a message</a>
           </article>
         </div>
 
@@ -46,6 +47,7 @@ const sendEmail = (e) => {
             Send Message
           </button>
         </form>
+        <a href="#home" className='scroll__up'><RxDoubleArrowUp/></a>
       </div>
     </section>
   )
