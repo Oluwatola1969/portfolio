@@ -7,6 +7,8 @@ import  { useRef } from 'react';
 import emailjs from 'emailjs-com'
 import {RxDoubleArrowUp} from 'react-icons/rx'
 
+const activePage= window.location
+alert(activePage)
 export const Contact = () => {
 const form = useRef();
 
