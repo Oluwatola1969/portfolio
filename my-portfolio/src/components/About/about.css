@@ -67,6 +67,10 @@
     font-size: 1rem;
 }
 
+.about__card h6{
+    color: var(--color-pry);
+}
+
 .about__icon{
     color: var(--color-pry);
     font-size: 1.2rem;

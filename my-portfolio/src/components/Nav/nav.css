@@ -59,11 +59,16 @@ nav a{
     display: flex;
     padding: .5rem;
     border-radius: 50%;
+    color: var(--color-white);
+}
+
+nav a:hover{
+    color: var(--color-bg);
 }
 
 nav a.active{
     background: var(--color-white);
-    color: var(--color-bg);
+    color: var(--color-text-dark);
 }
 
 @media screen and (max-width:1024px){

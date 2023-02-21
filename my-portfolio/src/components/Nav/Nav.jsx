@@ -9,6 +9,9 @@ import {MdMiscellaneousServices} from 'react-icons/md'
 import {BsBriefcase} from 'react-icons/bs'
 import { useState } from 'react'
 
+// const activePage= window.location
+// console.log(activePage)
+
 export const Nav = () => {
   const [activeClass, setActiveClass] = useState('#home')
 
