@@ -1,8 +1,10 @@
 
 header{
+    width: 100vw;
     overflow: hidden;
-    transition: var(--transition);
     position: relative;
+    transition: var(--transition);
+    background: linear-gradient(to left, var(--color-bg-variant), var(--color-bg));
 }
 
 
@@ -91,6 +93,93 @@ header{
     height: 100%;
     background: url(../../Assets/blob.svg);
     background-repeat: no-repeat;
+}
+
+#plant{
+    animation: plant 5s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes plant {
+    from{
+        transform: rotateZ(15deg);
+    }
+    
+    to{
+        transform: rotateZ(-15deg);
+
+    }
+    
+}
+#head{
+    animation: head 2s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes head {
+    from{
+        transform: rotateZ(-3deg);
+    }
+    
+    to{
+        transform: rotateZ(3deg);
+
+    }
+    
+}
+#eyes{
+    animation: eyes 3s alternate infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes eyes {
+    from{
+        transform: rotateZ(3deg);
+    }
+    
+    to{
+        transform: rotateZ(-3deg);
+
+    }
+    
+}
+
+#body{
+    animation: body 1s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes body {
+    from{
+        transform: translateY(1px);
+    }
+    
+    to{
+        transform: translateY(-1px);
+
+    }
+    
+}
+#steam{
+    animation: steam .8s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes steam {
+    0%, 100%{
+        transform: translateY(1px);
+    }
+    
+    50%{
+        transform: translateY(-1px);
+
+    }
+    
 }
 
 @keyframes scroll {
