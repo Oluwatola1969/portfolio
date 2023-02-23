@@ -29,14 +29,12 @@ const sendEmail = (e) => {
           <article className="contact__option">
             <MdOutlineEmail className='contact__icon'/>
             <h4>Email</h4>
-            <h5>Tolamide29@gmail.com</h5>
-            <a href="mailto:tolamide29@gmail.com" target='_blank' rel='noreferrer noopener' className='contact__btn'>Send a message</a>
+            <a href="mailto:tolamide29@gmail.com" target='_blank' rel='noreferrer noopener' className='contact__btn'>Tolamide29@gmail.com</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__icon'/>
             <h4>WhatsApp</h4>
-            <h5>+2349136423491</h5>
-            <a href="https://api.whastapp.com/send?phone=+23491364234" target='_blank' rel='noreferrer noopener' className='contact__btn'>Send a message</a>
+            <a href="https://api.whastapp.com/send?phone=+23491364234" target='_blank' rel='noreferrer noopener' className='contact__btn'>+2349136423491</a>
           </article>
         </div>
 

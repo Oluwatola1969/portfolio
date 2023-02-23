@@ -15,9 +15,7 @@ export const Footer = () => {
       <li><a href="#">Home</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#service">Service</a></li>
       <li><a href="#portfoilio">Portfoilio</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 

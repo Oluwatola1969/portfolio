@@ -168,6 +168,7 @@ header{
     animation: steam .8s alternate infinite;
     transform-origin: bottom;
     transform-box: fill-box;
+    background-color: red;
 }
 
 @keyframes steam {

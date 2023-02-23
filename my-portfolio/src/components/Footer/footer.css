@@ -7,11 +7,11 @@ footer{
     align-items: center;
     gap: 1.2rem;
     flex-direction: column;
-    color: var(--color-bg);
+    color: var(--color-white);
     margin: 0 auto;
 }
 footer a {
-    color: var(--color-bg);
+    color: var(--color-white);
     position: relative;
     padding: 3px 3px;
     font-weight: 600;
@@ -20,7 +20,7 @@ footer a {
 
 footer a:hover{
     color: var(--color-bg);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 footer ul a::after{
@@ -54,15 +54,12 @@ footer ul a:hover::after{
     display: flex;
     color: var(--color-white);
     padding: 0.5rem;
-    background: var(--color-bg);
-    border: 1px solid var(--color-bg);
+    background: var(--color-text-dark);
     border-radius: 1.5rem;
     transition: var(--transition);
 }
 
 .footer__socials a:hover{
-    background: transparent;
-    color: var(--color-bg);
     transform: translate(5px);
 }
 
