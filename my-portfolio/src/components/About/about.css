@@ -1,11 +1,10 @@
 .about__container{
     display: grid;
-    grid-template-columns: 40% 50%;
-    gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
     align-items: center;
     justify-content: center;
     place-items: center;
-    padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -16,15 +15,17 @@
 }
 
 .about__img{
-    background: linear-gradient(45deg, var(--color-pry),var(--color-white), var(--color-pry));
-    width: 22rem;
-    height: 22rem;
-    border-radius: 2rem;
+    display: flex;
+}
+
+.about__img:hover #left-s{
+    color: red;
+    background: red;
 }
 
 .about__img img{
-    width: 22rem;
-    height: 22rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     transform: rotate(10deg);
     border-radius: 2rem;
@@ -35,46 +36,13 @@
     transform: rotate(0);
 }
 
-.about__content{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.about__skills-content{
+ margin-bottom: .5rem;
 }
 
-.about__cards{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-content: center;
-    gap: 2%;
-    text-align: center;
-}
-
-.about__card{
-    border-radius: 1rem;
-    border: 1px solid var(--color-light);
-    background: var(--color-bg-variant);
-    padding: 1.5rem;
-    transition: var(--transition);
-}
-
-.about__card:hover{
-    border: 1px solid var(--color-light);
-    background-color: transparent;
-    transform: translateY(-.5rem);
-}
-
-.about__card h5{
-    font-size: 1rem;
-}
-
-.about__card h6{
-    color: var(--color-pry);
-}
-
-.about__icon{
-    color: var(--color-pry);
-    font-size: 1.2rem;
-    margin-bottom: .5rem;
+.about__skills-content .skill-bullet{
+    margin-right: 5px;
+    padding:3px;
 }
 
 a .about__btn {
@@ -82,6 +50,133 @@ a .about__btn {
     display: flex;
     justify-content: center;
 }
+
+.skill__icons{
+    margin-block: 1.5rem;
+    gap: 1.5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.skill__desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: wrap;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.skill__desc small{
+    font-size: .7rem;
+}
+
+.skill__icon{
+    font-size: 3rem;
+}
+
+
+#plant{
+    animation: plant 5s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes plant {
+    from{
+        transform: rotateZ(15deg);
+    }
+    
+    to{
+        transform: rotateZ(-15deg);
+
+    }
+    
+}
+#head{
+    animation: head 2s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes head {
+    from{
+        transform: rotateZ(-3deg);
+    }
+    
+    to{
+        transform: rotateZ(3deg);
+
+    }
+    
+}
+#eyes{
+    animation: eyes 3s alternate infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+@keyframes eyes {
+    from{
+        transform: rotateZ(3deg);
+    }
+    
+    to{
+        transform: rotateZ(-3deg);
+
+    }
+    
+}
+
+#body{
+    animation: body 1s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes body {
+    from{
+        transform: translateY(1px);
+    }
+    
+    to{
+        transform: translateY(-1px);
+
+    }
+    
+}
+#steam{
+    animation: steam .8s alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    background-color: red;
+}
+
+@keyframes steam {
+    0%, 100%{
+        transform: translateY(1px);
+    }
+    
+    50%{
+        transform: translateY(-1px);
+
+    }
+    
+}
+
+@keyframes scroll {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+    
+} 
+
+/* *********** media queries********** */
 
 
 /* Media queries(median screen) */
@@ -96,6 +191,10 @@ a .about__btn {
         grid-template-columns: 1fr;
     }
 
+    .about__content{
+        width: var(--container-md);
+    }
+
     .about__img{
         width: 18rem;
         height: 18rem;
@@ -106,6 +205,10 @@ a .about__btn {
         height: 18rem;
     }
 
+    .about__img{
+        margin-top: -4rem;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -114,8 +217,16 @@ a .about__btn {
         margin-bottom: 4rem;
     }
 
+    .about__content{
+        width: var(--container-sm);
+    }
+
     .about__img{
-        display: none;
+        margin-top: -4rem;
+    }
+
+    .skill__icons{
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }

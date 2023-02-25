@@ -29,6 +29,16 @@ header{
     align-self: flex-end;
 }
 
+.header__img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .CTA{
     display: flex;
     gap: 1rem;
@@ -95,105 +105,6 @@ header{
     background-repeat: no-repeat;
 }
 
-#plant{
-    animation: plant 5s alternate infinite;
-    transform-origin: bottom;
-    transform-box: fill-box;
-}
-
-@keyframes plant {
-    from{
-        transform: rotateZ(15deg);
-    }
-    
-    to{
-        transform: rotateZ(-15deg);
-
-    }
-    
-}
-#head{
-    animation: head 2s alternate infinite;
-    transform-origin: bottom;
-    transform-box: fill-box;
-}
-
-@keyframes head {
-    from{
-        transform: rotateZ(-3deg);
-    }
-    
-    to{
-        transform: rotateZ(3deg);
-
-    }
-    
-}
-#eyes{
-    animation: eyes 3s alternate infinite;
-    transform-origin: top;
-    transform-box: fill-box;
-}
-
-@keyframes eyes {
-    from{
-        transform: rotateZ(3deg);
-    }
-    
-    to{
-        transform: rotateZ(-3deg);
-
-    }
-    
-}
-
-#body{
-    animation: body 1s alternate infinite;
-    transform-origin: bottom;
-    transform-box: fill-box;
-}
-
-@keyframes body {
-    from{
-        transform: translateY(1px);
-    }
-    
-    to{
-        transform: translateY(-1px);
-
-    }
-    
-}
-#steam{
-    animation: steam .8s alternate infinite;
-    transform-origin: bottom;
-    transform-box: fill-box;
-    background-color: red;
-}
-
-@keyframes steam {
-    0%, 100%{
-        transform: translateY(1px);
-    }
-    
-    50%{
-        transform: translateY(-1px);
-
-    }
-    
-}
-
-@keyframes scroll {
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(-10px);
-    }
-    
-}
-
-/************ media queries***********/
 
 @media screen and (max-width:1024px) {
 header{
@@ -209,7 +120,7 @@ header{
 
     .header__container{
         padding-top: 2rem;
-        height: 100%;
+        height: fit-content;
         grid-template-columns: 1fr;
         justify-items: center;
     }
@@ -220,23 +131,28 @@ header{
         aspect-ratio: 1/1;
     }
 
-    .blob{
-        display: none;
+    
+    .header__img{
+        margin-top: 0;
+        height: 35vh;
+        padding-bottom: 2rem;
     }
 
 
 
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:390px){
     .header__container{
-        height: 86vh;
+        height: 76vh;
     }
+    
+    
 }
 
 @media screen and (min-height:1024px){
     .header__container{
-        height: 50vh;
+        height: fit-content;
     }
 }
 

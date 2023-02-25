@@ -1,25 +1,4 @@
-import React from 'react'
-import { HeaderSocials } from './HeaderSocials'
-import './header.css'
-import {RxDoubleArrowDown} from 'react-icons/rx'
-
-export const Header = () => {
-  return (
-    <header id='home'>
-      <div className="container header__container">
-        <div className="header__container-right">
-          <h5>Hello I'm</h5>
-          <h1>Oluwatola</h1>
-          <h5 className='text-light'>A Frontend Software Developer</h5>
-          <div className="CTA">
-            <a href="#portfolio" className="btn">My works</a>
-            <a href="#contact" className="btn btn-primary">Let's talk</a>
-          </div>
-        <HeaderSocials/>
-        </div>
-
-        <div className='header__img'>
-        <svg width="600" height="600" viewBox="0 0 941 1104" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="941" height="1104" viewBox="0 0 941 1104" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="header__img">
 <g id="header_img">
 <g id="blob 2 1">
@@ -117,12 +96,3 @@ export const Header = () => {
 </clipPath>
 </defs>
 </svg>
-
-        </div>
-
-        <a href="#contact" className='scroll__down'><RxDoubleArrowDown/></a>
-
-      </div>
-    </header>
-  )
-}

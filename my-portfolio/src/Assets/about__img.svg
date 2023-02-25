@@ -1,25 +1,4 @@
-import React from 'react'
-// import AboutMe from '../../Assets/img-timnik.jpg'
-import './about.css'
-import cv from '../../Assets/Oluwatola_Senbadejo_CV.pdf'
-import {DiCss3}from 'react-icons/di'
-import {BsBootstrapFill}from 'react-icons/bs'
-import {TbBrandNextjs}from 'react-icons/tb'
-import {FaReact}from 'react-icons/fa'
-import {AiFillHtml5}from 'react-icons/ai'
-import {BsPatchCheckFill}from 'react-icons/bs'
-import {FaNpm}from 'react-icons/fa'
-import {BsGithub}from 'react-icons/bs'
-
-export const About = () => {
-  return (
-    <section id='about' className='about__section'>
-      <h5>Who I am</h5>
-      <h2>About me</h2>
-      <div className="container about__container">
-        <div className="about__img">
-          {/* <img src={AboutMe} alt="about-me" /> */}
-          <svg width="452" height="380" viewBox="0 0 452 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="452" height="380" viewBox="0 0 452 380" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="about__img">
 <g id="coding 1" clip-path="url(#clip0_17_3)">
 <path id="Vector" d="M225.148 115.863C245.878 121.877 272.937 128.044 277.367 141.304C281.64 154.565 263.284 174.918 251.891 194.037C240.498 213.156 236.067 231.042 224.515 249.391C212.964 267.893 194.292 286.858 177.202 284.854C159.954 282.695 144.288 259.567 123.875 243.994C103.304 228.421 77.9857 220.403 65.01 203.442C52.0344 186.328 51.2432 160.115 65.1683 144.697C79.0934 129.432 107.576 124.806 128.306 118.947C149.193 113.088 162.327 105.841 176.252 105.07C190.019 104.299 204.419 110.004 225.148 115.863Z" fill="#1F1F38"/>
@@ -66,19 +45,19 @@ export const About = () => {
 <g id="frame">
 <g id="left-s">
 <line id="Line 9" x1="37.5" y1="6.55671e-08" x2="37.5" y2="336" stroke="#6C63FF" stroke-width="3"/>
-<line id="Line 8" y1="342.5" x2="406" y2="342.5" stroke="#6C63FF" stroke-width="3"/>
-<line id="Line 11" x1="46" y1="34.5" x2="452" y2="34.5" stroke="#6C63FF" stroke-width="3"/>
-<line id="Line 7" x1="414.5" y1="44" x2="414.5" y2="380" stroke="#6C63FF" stroke-width="3"/>
+<line id="Line 10" x1="44.5001" y1="6.55671e-08" x2="44.5" y2="336" stroke="white" stroke-width="3"/>
 </g>
 <g id="down-s">
-<line id="Line 10" x1="44.5001" y1="6.55671e-08" x2="44.5" y2="336" stroke="white" stroke-width="3"/>
 <line id="Line 2" y1="334.5" x2="406" y2="334.5" stroke="white" stroke-width="3"/>
-<line id="Line 12" x1="46" y1="42.5" x2="452" y2="42.5" stroke="white" stroke-width="3"/>
-<line id="Line 6" x1="407.5" y1="44" x2="407.5" y2="380" stroke="white" stroke-width="3"/>
+<line id="Line 8" y1="342.5" x2="406" y2="342.5" stroke="#6C63FF" stroke-width="3"/>
 </g>
 <g id="up-s">
+<line id="Line 11" x1="46" y1="34.5" x2="452" y2="34.5" stroke="#6C63FF" stroke-width="3"/>
+<line id="Line 12" x1="46" y1="42.5" x2="452" y2="42.5" stroke="white" stroke-width="3"/>
 </g>
 <g id="right-s">
+<line id="Line 6" x1="407.5" y1="44" x2="407.5" y2="380" stroke="white" stroke-width="3"/>
+<line id="Line 7" x1="414.5" y1="44" x2="414.5" y2="380" stroke="#6C63FF" stroke-width="3"/>
 </g>
 </g>
 </g>
@@ -88,37 +67,3 @@ export const About = () => {
 </clipPath>
 </defs>
 </svg>
-
-        </div>
-
-        <div className="about__content">
-              <h2>Frontend developer </h2>
-              <div className="about__skills">
-                <div className="about__skills-content">
-                  <BsPatchCheckFill className='skill-bullet'/> 
-                  <span>Experience working with HTML, CSS and JavaScript to create reponsive, user-friendly web pages</span>
-                </div>
-                 <div className="about__skills-content">
-                  <BsPatchCheckFill className='skill-bullet'/> 
-                  <span> Worked with frameworks like React and NextJs to build complex web applications that require a dynamic and interactive user experience.</span>
-                </div>
-                <div className="about__skills-content">
-                  <BsPatchCheckFill className='skill-bullet'/> 
-                  <span> Familiar with Git and version control to manage code changes, collaborate with other developers, and maintain code quality.</span>
-                </div>
-              </div>
-              <div className="skill__icons">
-                <div className="skill__desc"><AiFillHtml5 className='skill__icon'/> <small>HTML</small></div>
-                <div className="skill__desc"><DiCss3 className='skill__icon'/> <small>CSS-3</small></div>
-                <div className="skill__desc"><BsBootstrapFill className='skill__icon'/><small>Bootstrap</small></div>
-                <div className="skill__desc"><FaReact className='skill__icon'/><small>ReactJs</small></div>
-                <div className="skill__desc"><TbBrandNextjs className='skill__icon'/><small>NextJs</small></div>
-                <div className="skill__desc"><FaNpm className='skill__icon'/><small>npm</small></div>
-                <div className="skill__desc"><BsGithub className='skill__icon'/><small>github</small></div>
-              </div>
-              <a href={cv} className="btn about__btn" download>Download CV</a>
-        </div>
-      </div>
-    </section>
-  )
-}

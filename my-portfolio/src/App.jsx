@@ -4,7 +4,6 @@ import {Contact} from './components/Contact/Contact'
 import {Header} from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
 import { Nav } from './components/Nav/Nav'
-import { Experience } from './components/Experience/Experience'
 import { Portfolio } from './components/Portfolio/Portfolio'
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
         <Header/>
         <Nav/>
         <About/>
-        <Experience/>
         <Portfolio/>
         <Contact/>
         <Footer/>
