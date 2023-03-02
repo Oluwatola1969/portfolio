@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import ME from '../../Assets/img-grace.jpg'
+// import ME from '../../Assets/img-grace.jpg'
 import {AiOutlineLinkedin} from 'react-icons/ai'
 import {BsGithub} from 'react-icons/bs'
 import {AiOutlineTwitter} from 'react-icons/ai'
@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
   <footer className='footer__container'>
 
-    <a href="#"><img src={ME}/></a>
+    <h1><a href="#">Oluwatola</a></h1>
 
     <ul className="footer__links">
       <li><a href="#">Home</a></li>
