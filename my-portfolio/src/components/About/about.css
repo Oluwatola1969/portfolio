@@ -18,10 +18,6 @@
     display: flex;
 }
 
-.about__img:hover #left-s{
-    color: red;
-    background: red;
-}
 
 .about__img img{
     width: 100%;
@@ -214,7 +210,7 @@ a .about__btn {
 @media screen and (max-width:600px) {
    #about{
         margin: 0 auto;
-        margin-bottom: 4rem;
+        padding-bottom: 3rem;
     }
 
     .about__content{

@@ -9,8 +9,8 @@
     grid-template-columns: 1fr;
     place-items: center;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to top, var(--color-text-dark), var(--color-light));
-    padding: 2rem 0;
+    background: linear-gradient(to top, var(--color-bg), var(--color-light));
+    padding: 1.5rem 0;
     border-radius: 2rem;
     transition: var(--transition);
 }
@@ -26,39 +26,49 @@
     transform: translateY(-5px);
 }
 
+.contact__option h4{
+    color: var(--color-light);
+}
+
 .contact__icon{
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--color-pry);
+    color: var(--color-bg);
 }
 
 .contact__btn{
     position: relative;
     font-weight: bold;
-    color: var(--color-bg);
+    color: var(--color-pry);
     margin-top: 0.4rem;
     transition: var(--transition);
-    border-bottom: 1px solid  ;
+    border-bottom: 1px solid ;
 }
 
 .contact__btn::after{
     content: '';
     height: 2px;
     width: 0;
-    background: var(--color-white );
+    background: var(--color-pry );
     position: absolute;
     left: 0;
     bottom: 0;
     transition: var(--transition);
 }
 
+form button{
+    background-color: transparent;
+    color: var(--color-white);
+}
+
 .contact__btn:hover{
-    color: var(--color-pry);
+    color: var(--color-white);
+    background: transparent;
 }
 
 .contact__btn:hover::after{
     width: 100%;
-    background: var(--color-pry);
+    background: var(--color-white);
 }
 
 .contact__form{
@@ -72,7 +82,7 @@ input, textarea{
     padding: 1rem 0;
     resize: none;
     border: none;
-    border-bottom: 1px solid var(--color-bg-variant);
+    border-bottom: 3px solid var(--color-bg-variant);
     background: transparent;
     font-size: 1rem;
     color: var(--color-text-dark);
@@ -90,25 +100,7 @@ input:hover, textarea:hover{
 }
 
 
-.scroll__up{
-    position: block;
-    right: 0;
-    bottom: 0;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    transform: rotate(90deg);
-    animation: scroll .5s infinite alternate; 
-}
-
-@keyframes scroll {
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(-10px);
-    }
     
-}
 
 
 /**************Media Queries**********/
@@ -121,8 +113,22 @@ input:hover, textarea:hover{
     }
 
     .contact__me{
-        grid-template-columns: 1fr 1fr;
+        width: 50vw;
+        grid-template-columns: 1fr 1fr;               ;
         gap: 1rem;
+        margin: auto;
+    }
+
+    .contact__container{
+        padding-bottom:2rem;
     }
     
+}
+
+@media screen and (max-width:600px){
+    .contact__me{
+        grid-template-columns:1fr;
+        width: 75vw;
+    }
+
 }

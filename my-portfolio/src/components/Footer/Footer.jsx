@@ -14,8 +14,7 @@ export const Footer = () => {
     <ul className="footer__links">
       <li><a href="#">Home</a></li>
       <li><a href="#about">About Me</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#portfoilio">Portfoilio</a></li>
+      <li><a href="#portfoilio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -25,7 +24,7 @@ export const Footer = () => {
         <a href="https://twitter.com"><AiOutlineTwitter/></a>
     </div>
 
-    <div className="copyright"> &copy; Senbadejo Grace. All right reserved. </div>
+    <div className="copyright"> &copy; Senbadejo Oluwatola. All right reserved. </div>
 
 
   </footer>

@@ -10,28 +10,35 @@
 }
 
 :root{
-    --color-bg: #a9a9a9;
-    --color-bg-variant: var(--color-light);
-    --color-pry:#6C63FF;
-    --color-pry-variant:#a9a9a9 ;
-    --color-text-dark:#1f1f38;
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+    /* --color-bg: #a9a9a9; */
+    /* --color-bg-variant: var(--color-light); */
+    /* --color-pry:#6C63FF; */
+    /* --color-pry-variant:#a9a9a9 ; */
+    /* --color-text-dark:#1f1f38; */
+    /* --color-white: #fff; */
+    /* --color-light: rgba(255, 255, 255, 0.6); */
+
+
     /* color option 2 */
-    /* --color-bg: #0b0c10;
+    /* --color-bg: #0b0c10; */
     --color-bg-variant: #1f2833;
-    --color-pry:#4db5ff;
+    /* --color-pry:#4db5ff; */
     --color-pry-variant:#45a29e ;
     --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6); */
+    --color-light: rgba(255, 255, 255, 0.6);
 
     /* color option 1 */
-    /* --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-pry:#4db5ff;
+     /* --color-bg: #1f1f38;
+    /* --color-bg-variant: #2c2c6c; */
+    /* --color-pry:#4db5ff; */
     --color-pry-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6); */
+    /* --color-white: #fff; */
+    /* --color-light: rgba(255, 255, 255, 0.6);  */ 
+
+    /* color option 3 */
+    --color-bg:#040714;
+    --color-pry:#0063e5;
+    /* --color-text-light:#f9f9f9;  */
 
     --container-lg: 75%;
     --container-md: 86%;
@@ -52,7 +59,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;    
     background: var(--color-bg);
-    color: var(--color-text-dark);
+    color: var(--color-white);
     line-height: 1.7;
     transition: var(--transition);
 }
@@ -67,14 +74,18 @@ body{
 
 section{
     width: 100%;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     padding-top: 2rem;
     transition: var(--transition);
+    padding-bottom: 2rem;
 }
 
 section:nth-child(odd){
-    background: var(--color-bg-variant);
-    padding-bottom: 6rem;
+    background: linear-gradient(to right, var(--color-bg-variant), var(--color-bg));
+}
+
+section:nth-child(even){
+    background: linear-gradient(to left, var(--color-bg-variant), var(--color-bg));
 }
 
 section > h2{
@@ -83,6 +94,7 @@ section > h2{
     margin-bottom: 2rem;
 }
 section > h5{
+    color: var(--color-light);
     text-align: center;
 }
 
@@ -92,7 +104,7 @@ a{
 }
 
 a:hover{
-    color: var(--color-white);
+    color: var(--color-pry);
 }
 
 .btn{
@@ -113,10 +125,10 @@ a:hover{
     border-color: transparent;
 }
 
-.btn-primary{
+/* .btn-primary{
     background-color: var(--color-pry) ;
     color: var(--color-text-dark);
-}
+} */
 
 /* .btn-primary:hover{
     background-color: var(--color-bg);
@@ -145,10 +157,6 @@ img{
         width: var(--container-md);
     }
 
-    section{
-        margin-top: 6rem;
-    }
-
     h1{
         font-size: 2rem;
     }
@@ -165,10 +173,6 @@ img{
     section > h2{
         margin-bottom: 2rem;
         text-align: center;
-    }
-
-    section{
-        margin-top: 2rem;
     }
 
     h1{

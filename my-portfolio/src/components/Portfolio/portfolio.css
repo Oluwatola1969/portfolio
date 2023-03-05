@@ -45,7 +45,10 @@
     top: 2.5%;
     right: -100%;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
+    font-size: .75rem;
+    letter-spacing: 1.5px;
+    text-align: center;
     width: 95%;
     height: 95%;
     background: rgba(0, 0, 0, 0.301);
@@ -82,26 +85,10 @@
     border: 1px solid transparent;
     background: var(--color-pry);
     border-radius: 1rem;
-    padding-inline: .5rem;
+    padding: .2rem .7rem;
     margin-top: .8rem;
 }
 
-/* .portfolio__modal{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: none;
-    background: rgba(0, 0, 0, 0.301);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    transition: var(--transition);
-    opacity: 0;
-    visibility: hidden;
-} */
 
 .portfolio__modal_card{
     display: flex;
@@ -110,9 +97,9 @@
     justify-content: flex-start;
     background-color: var(--color-bg-variant);
     width: 400px;
-    height: 95vh;
+    height: 100%;
+    max-height: 95vh;
     position: relative;
-    /* padding: .5rem; */
     border-radius: .9rem;
 }
 
@@ -169,6 +156,10 @@
     .portfolio__container{
         grid-template-columns: 1fr 1fr;
     }
+
+    .project__info{
+        font-size: .75rem;
+    }
     
 }
 
@@ -176,5 +167,10 @@
     .portfolio__container{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .project__info{
+        line-height: 1;
+        font-size: .75rem;
     }
 }
